@@ -66,7 +66,7 @@ function createCube(x, y, z, color, texture = null) {
     let geometry = new THREE.BoxGeometry(1, 1, 1);
     let material = new THREE.MeshStandardMaterial({ 
         color,
-        map: texture // Apply texture if provided
+        map: texture
     });
     let cube = new THREE.Mesh(geometry, material);
     cube.position.set(x, y, z);
